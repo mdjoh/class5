@@ -60,3 +60,20 @@ print(data.head())
 
 print(data.shape)
 
+
+# 2. organize data and access row, column, or specific value easily
+
+# rows 4 and 5:
+#print(data.iloc[3:5,:])
+
+# 1st 3 rows and last 3 col:
+#print(data.iloc[:3, -3:])
+
+# specific value:
+#print(data.iloc[3,4])
+
+# Computing and printing summary stats
+import numpy as np
+
+print(np.mean(data))
+print(np.std(data))
